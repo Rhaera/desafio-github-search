@@ -82,6 +82,7 @@ class MainActivity : AppCompatActivity() {
 
         val shareIntent = Intent.createChooser(sendIntent, null)
         startActivity(shareIntent)
+
     }
 
     // Metodo responsavel por abrir o browser com o link informado do repositorio
@@ -94,7 +95,5 @@ class MainActivity : AppCompatActivity() {
                 Uri.parse(urlRepository)
             )
         )
-
     }
-
 }
